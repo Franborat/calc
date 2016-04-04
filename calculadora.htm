@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Calculadora_jQuery</title>
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-2.1.4.min.js" >
+</script>
+
+<script type="text/javascript">
+
+$(function(){
+
+	pantalla = $("#n1");
+    boton = $("#b1");
+	
+	pantalla.on("click",
+		function(){ pantalla.val("");
+	});
+	
+	boton.on("click",function(){
+		
+		pantalla.val(pantalla.val()*pantalla.val());
+	});
+});
+
+</script>
+
+<body>
+Numero:
+<input type="text" id="n1">
+<button id="b1">x<sup>2</sup> </button>
+</body>
+
+
