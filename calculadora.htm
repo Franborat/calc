@@ -10,16 +10,23 @@
 $(function(){
 
 	pantalla = $("#n1");
-    boton = $("#b1");
+    boton1 = $("#b1");
+    boton2 = $("#b2");
 	
 	pantalla.on("click",
 		function(){ pantalla.val("");
 	});
 	
-	boton.on("click",function(){
+	boton1.on("click",function(){
 		
 		pantalla.val(pantalla.val()*pantalla.val());
 	});
+
+	boton2.on("click",function(){
+		
+		pantalla.val(Math.sqrt(pantalla.val()));
+	});
+
 });
 
 </script>
@@ -28,6 +35,7 @@ $(function(){
 Numero:
 <input type="text" id="n1">
 <button id="b1">x<sup>2</sup> </button>
+<button id="b2">Raiz</sup> </button>
 </body>
 
 
